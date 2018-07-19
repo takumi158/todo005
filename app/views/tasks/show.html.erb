@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<h1>登録内容</h1>
+<hr/>
+<p>
+  <strong>登録日:</strong>
+  <%= @task.date %>
+</p>
+<hr/>
+<p>
+  <strong>タイトル:</strong>
+  <%= @task.title %>
+</p>
+<hr/>
+<p>
+  <strong>課題内容:</strong>
+  <%= @task.body %>
+</p>
+<hr/>
+<p>
+  <strong>期限:</strong>
+  <%= @task.deadline %>
+</p>
+<hr/>
+<%= link_to '編集', edit_task_path(@task) %> |
+<%= link_to '課題一覧', tasks_path %>
